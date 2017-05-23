@@ -19,10 +19,10 @@
 10.) BENG 146 Programming for engineers course: It covers C++ and Java. See BENG146_course_specification.pdf file.
 
 11.) My achievements:
-International Zhautykov Math Olympiad - bronze (individual)
-Asian-Pacific Math Olympiad - bronze (individual)
-Silk-Road International Math Olympiad - bronze (individual)
-Republican Math Olympiad - bronze (individual)
+International Zhautykov Math Olympiad - bronze (individual),
+Asian-Pacific Math Olympiad - bronze (individual),
+Silk-Road International Math Olympiad - bronze (individual),
+Republican Math Olympiad - bronze (individual),
 NU Math Battle - 3rd place (team)
 
 12.) How this project helps me for participating nFactorial Incubator: I got acquainted with basic theories about machine learning (classifiers). I understood how classifiers work. For developing my application, I need to learn TensorFlow which is an open source library. In addition, I started to learn developing android apps from thenewboston android developing for beginner (youtube) and I have some practices with .xml files (layout), activities (java, android library).
