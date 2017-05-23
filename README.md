@@ -30,3 +30,5 @@ NU Math Battle - 3rd place (team)
 13.) How to compile and run project: 
 a.) Compile project using command line (Windows+R, cmd.exe). Open the src folder in command line using cd and dir. Then compile the project using mingw32-make. (firstly, change PATH to C:\Program Files (x86)\CodeBlocks\MinGW\bin). Command lines shows some errors, but do not look at them.
 b.) Then enter to bin folder using cd and dir. Copy and paste from commands.txt file (project.exe will run). After you have runned, there will occur new .txt files in ChenLiver2004_10237x157 or other folders depending on the command. 
+
+14.) Developing machine learning related applications. Furhter research in machine learning during my study at university. 
