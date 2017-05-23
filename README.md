@@ -2,9 +2,9 @@
 
 1.) The aim of the project: Comparing the true errors of different classifiers.
 
-2.) How it is done: We were given source files that were written by professor, and we should remove all redundant codes, and add new codes of different classifiers. I, Zhumazhenis Dairabay, have coded all classifiers during this group project as my part was coding and math. 
+2.) How it is done: We were given source files that were written by professor Amin Zollanvari, and we should remove all redundant codes, and add new codes of different classifiers. I, Zhumazhenis Dairabay, have coded all classifiers during this group project as my part was coding and math. 
 
-4.) Language: C++
+4.) Language that is used in project: C++
 
 5.) What topics included: Loops, Arrays, Functions, Struct, working with files (reading and writing .txt files)
 
@@ -14,7 +14,9 @@
 
 8.) Project is too big and there are some parts of source files that I do not understand. But, for this project it does not need to understand all parts of source files. 
 
-9.) The project is also concerns math as we need to deal with matrices.
+9.) The project is also concerns math as we need to deal with probability and matrices.
 
-10.) How this project helps me for participating nFactorial Incubator: I got acquainted with basic theories about machine learning (classifiers). 
+10.) BENG 146 Programming for engineers course: I covers C++ and Java. See BENG146_course_specification.pdf file.
+
+11.) How this project helps me for participating nFactorial Incubator: I got acquainted with basic theories about machine learning (classifiers). I understood how classifiers work. For developing my application, I need to learn TensorFlow which is an open source library. In addition, I started to learn developing android apps from thenewboston android developing for beginner (youtube) and I have some practices with .xml files (layout), activities (java, android library).
 
