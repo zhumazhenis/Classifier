@@ -4,6 +4,8 @@
 
 2.) How it is done: We were given source files that were written by professor Amin Zollanvari, and we should remove all redundant codes, and add new codes of different classifiers. I, Zhumazhenis Dairabay, have coded all classifiers during this group project as my part was coding and math. 
 
+3.) Project was done for LEVEL 4, and we got 114. See FinalProject/ProjectDescription_updated.pdf (Level 1 can get at most 70 out of 100, Level 2 can get at most 95 out of 100, Level 3 can get at most 105 out of 100, Level 4 can get at most 115 out of 100).
+
 4.) Language that is used in project: C++
 
 5.) What topics included: Loops, Arrays, Functions, Struct, working with files (reading and writing .txt files)
