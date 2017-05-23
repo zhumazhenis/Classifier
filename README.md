@@ -14,7 +14,7 @@
 
 8.) Project is too big and there are some parts of source files that I do not understand. But, for this project it does not need to understand all parts of source files. 
 
-9.) The project is also concerns math as we need to deal with probability and matrices.
+9.) The project also concerns math as we need to deal with probability and matrices.
 
 10.) BENG 146 Programming for engineers course: I covers C++ and Java. See BENG146_course_specification.pdf file.
 
