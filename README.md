@@ -2,7 +2,7 @@
 
 1.) The aim of the project: Comparing the true errors of different classifiers.
 
-2.) How it is done: We were given source files that were written by professor, and we should remove all redundant codes, and add new codes of different classifiers. I, Zhumazhenis Dairabay, have coded all classifiers during this group project as my part was coding. 
+2.) How it is done: We were given source files that were written by professor, and we should remove all redundant codes, and add new codes of different classifiers. I, Zhumazhenis Dairabay, have coded all classifiers during this group project as my part was coding and math. 
 
 4.) Language: C++
 
