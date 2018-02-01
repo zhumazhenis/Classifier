@@ -14,6 +14,8 @@
 
 using namespace std;
 
+typedef pair<string, int> mp;
+
 string getMnemonic(ifstream &fptr);
 
 string getOperand(ifstream &fptr);

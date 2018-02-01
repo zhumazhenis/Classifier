@@ -9,12 +9,10 @@ using namespace std;
 
 string error;
 char c[] = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F'};
-string s[] = {"NOP", "MOV", "ADD", "SUB", "MUL", "DIV",
-              "INC", "DEC", "AND", "OR", "XOR", "CMP", "CLR",
-              "JMP", "JZ", "JNZ", "CPL", "XCHG", "HLT", ""};
+string s[] = {"NOP", "MOV", "ADD", "SUB", "MUL", "DIV", "INC", "DEC", "AND", "OR",
+              "XOR", "CMP", "CLR", "JMP", "JZ", "JNZ", "CPL", "XCHG", "HLT", ""};
 
-string s2[] = {"", "A,B", "B,A", "A,#X", "B,#X", "A,Address", "B,Address",
-               "Address,A", "Address,B", "Address"};
+string s2[] = {"", "A,B", "B,A", "A,#X", "B,#X", "A,Address", "B,Address", "Address,A", "Address,B", "Address"};
 
 string keys[] = {
         "NOP ", "MOV A,B", "MOV B,A", "MOV A,#X", "MOV B,#X", "MOV A,Address", "MOV B,Address", "MOV Address,A",
@@ -28,16 +26,11 @@ set<string> mnemSet(s, s + sizeof(s) / sizeof(s[0]));
 set<string> operandSet(s2, s2 + sizeof(s2) / sizeof(s2[0]));
 
 pair<string, int> hexByte[] = {
-        make_pair("00", 1), make_pair("01", 1), make_pair("02", 1),
-        make_pair("03", 2), make_pair("04", 2), make_pair("05", 3),
-        make_pair("06", 3), make_pair("07", 3), make_pair("08", 3),
-        make_pair("09", 1), make_pair("0A", 1), make_pair("0B", 1),
-        make_pair("0C", 1), make_pair("0D", 1), make_pair("0E", 1),
-        make_pair("0F", 1), make_pair("10", 1), make_pair("11", 1),
-        make_pair("12", 1), make_pair("13", 1), make_pair("14", 1),
-        make_pair("15", 1), make_pair("16", 1), make_pair("17", 3),
-        make_pair("18", 3), make_pair("19", 3), make_pair("20", 1),
-        make_pair("21", 1), make_pair("22", 1), make_pair("23", 1)
+        mp("00", 1), mp("01", 1), mp("02", 1), mp("03", 2), mp("04", 2), mp("05", 3),
+        mp("06", 3), mp("07", 3), mp("08", 3), mp("09", 1), mp("0A", 1), mp("0B", 1),
+        mp("0C", 1), mp("0D", 1), mp("0E", 1), mp("0F", 1), mp("10", 1), mp("11", 1),
+        mp("12", 1), mp("13", 1), mp("14", 1), mp("15", 1), mp("16", 1), mp("17", 3),
+        mp("18", 3), mp("19", 3), mp("20", 1), mp("21", 1), mp("22", 1), mp("23", 1)
 };
 
 map<string, pair<string, int>> values;
@@ -141,7 +134,7 @@ bool isAddress(string s) {
 }
 
 bool isData(string s) {
-    for (int i = (int)s.length() - 1; i >= 0; i--) {
+    for (int i = (int) s.length() - 1; i >= 0; i--) {
         if (s[i] == '#') {
             string a = "";
             a = s.substr((unsigned int) i + 1, s.length() - 1 - i);
@@ -163,14 +156,14 @@ bool isData(string s) {
 string extract(string operand) {
     string data = "";
     if (isData(operand)) {
-        for (int i = (int)operand.length() - 1; i >= 0; i--) {
+        for (int i = (int) operand.length() - 1; i >= 0; i--) {
             if (operand[i] != '#') {
                 string temp = string(1, operand[i]);
                 temp.append(data);
                 data = temp;
 
             } else {
-                if(data.length() == 1) {
+                if (data.length() == 1) {
                     string temp = "0";
                     temp.append(data);
                     data = temp;
