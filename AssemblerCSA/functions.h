@@ -1,9 +1,9 @@
 //
-// Created by Zhumazhenis on 25/01/2018.
+// Created by Zhumazhenis on 03/03/2018.
 //
 
-#ifndef ASSEMBLERCSA_FUNCTIONS_H
-#define ASSEMBLERCSA_FUNCTIONS_H
+#ifndef ASSEMBLERCSA2_FUNCTIONS_H
+#define ASSEMBLERCSA2_FUNCTIONS_H
 
 #include <iostream>
 #include <map>
@@ -11,29 +11,27 @@
 #include <string>
 #include <set>
 #include <sstream>
+#include <iomanip>
 
 using namespace std;
 
-typedef pair<string, int> mp;
+typedef pair<int, int> mp; // making pair function
 
-string getMnemonic(ifstream &fptr);
+char *getHex(ifstream &fptr); // Task 1: reads from .hex files and
 
-string getOperand(ifstream &fptr);
+void testGetHex(); // Task 1: Tests
 
-string normOperand(string operand);
+char alu(char a, char b, char op); // Task 2: alu function for arithmetic operations
 
-string extract(string s);
+void testAlu(); // Task 2: Tests
 
-bool isOperand(string s);
+void updatePC(int offset); // Task 3: updates pc counter according to table in Assignment 1
 
-bool isMnemonic(string s);
+void testTask34(); // Task 3, 4: Tests
 
-bool isAddress(string s);
+void finalFunction();
 
-bool isData(string s);
+ifstream buildFile(); // makes iftream object to read from file
 
-void toHex(string inFileName);
 
-void process();
-
-#endif //ASSEMBLERCSA_FUNCTIONS_H
+#endif //ASSEMBLERCSA2_FUNCTIONS_H
